@@ -77,3 +77,21 @@ nav li
     font-weight: bolder;
     color: #0065FC;
 }
+
+/* Barre de recherche */
+.recherche
+{
+    width: 1340px;
+    padding-left: 55px;
+    margin-top: 25px;
+}
+
+.filtre_list
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+    text-decoration: none;
+}
+
