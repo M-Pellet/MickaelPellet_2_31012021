@@ -208,11 +208,14 @@ article
     margin: 0 auto;
     padding-top: 45px;
 }
-.hebergement
+
+.liste_hebergement
 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    align-content: center;
     font-size: 1em;
     font-weight: bold;
     color: black;
@@ -220,21 +223,76 @@ article
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 90px 40px 90px 40px;
+    width: 830px;
+    height: 460px;
 }
 
-h4
-{
-    margin-bottom: 28px;
-}
 .cannebiere
 {
     background-color: #ffffff;
-    border: 1px solid transparent;
+    border: 0.1px solid white;
     border-radius: 20px;
-    padding: 5px 5px 5px 5px;
-    width: 245px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
     height: 200px;
 }
+
+.port   
+{
+    background-color: #ffffff;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
+    height: 200px;
+}
+
+.mouette  
+{
+    background-color: #ffffff;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
+    height: 200px;
+}
+
+.mer 
+{
+    background-color: #ffffff;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
+    height: 200px;
+}
+
+.panier
+{
+    background-color: #ffffff;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
+    height: 200px; 
+}
+
+.amina
+{
+    background-color: #ffffff;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
+    height: 200px;
+}
+
 .cannebiere img h5 p
 {
     display: flex;
@@ -244,6 +302,33 @@ h4
 
 img
 {
+    border-radius: 20px 20px 0px 0px;
+    margin: 4px 4px 0px 4px;
     width: 235px;
     height: 115px;
+}
+
+h5
+{
+    font-size: 1em;
+    padding: 7px 40px 0px 12px;
+}
+
+p
+{
+    font-size: 1em;
+    font-weight: normal;
+    padding: 6px 54px 0px 12px;
+}
+
+span
+{
+    font-weight: bold !important;
+}
+
+.stars
+{
+    color: #0065FC;
+    font-size: 0.7em;
+    padding: 5px 54px 0px 12px;
 }
