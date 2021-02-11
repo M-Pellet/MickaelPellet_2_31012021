@@ -332,3 +332,58 @@ span
     font-size: 0.7em;
     padding: 5px 54px 0px 12px;
 }
+
+/* Article Populaires */
+
+.liste_populaire
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 90px 40px 90px 40px;
+    width: 420px;
+    height: 625px;
+}
+
+.soleil
+{
+    display: flex;
+    background-color: #ffffff;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
+    height: 200px;
+}
+
+.eau
+{
+    display: flex;
+    background-color: #ffffff;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
+    height: 200px;
+}
+
+.bleu_blanc
+{
+    display: flex;
+    background-color: #ffffff;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
+    width: 243px;
+    height: 200px;
+}
