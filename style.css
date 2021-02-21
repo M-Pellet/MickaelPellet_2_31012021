@@ -8,10 +8,11 @@
 header
 {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 50px;
     width: 1340px;
     margin: 0 auto;
-    justify-content: space-between;
 }
 
 section
@@ -23,24 +24,25 @@ section
 }
 .logo 
 {
-    width: 96px;
-    height: 31px;
+    width: 100px;
+    height: 35px;
 }
 
 h1
 {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     font-size: 24px;
 }
 
 h2
 {
-    padding-top: 16px;
+    padding: 15px 0 0 0;
     font-size: 18px;
     font-weight: normal;
 }
 
 /* Navigation */
+
 nav ul
 {
     display: flex;
@@ -72,12 +74,20 @@ nav li
 }
 
 /* Barre de recherche */
-.recherche
+.filtre
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+/* .recherche
 {
     width: 1340px;
     margin-top: 25px;
     margin: 0 auto;
-}
+} */
 
 .barre_recherche i
 {
@@ -91,10 +101,10 @@ form
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 23px;
+    padding: 20px 0 0 0;
 }
 
-form i    
+form i   
 {
     display: flex;
     align-items: center;
@@ -134,18 +144,21 @@ form i
     height: 50px;
 }
 
-.filtre
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    padding-top: 33px;
-}
-
 .filtre h3
 {
+    display: flex;
+    align-items: center;
     margin-right: 30px;
 }
+
+.box
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+    /* align-items: center; */
+}
+
 .box i
 {
     display: flex;
@@ -158,12 +171,6 @@ form i
     border-radius: 30px;
     margin-right: -50px;
     position: relative;
-}
-
-.box
-{
-    display: flex;
-    justify-content: space-between;
 }
 
 .box p
@@ -183,6 +190,7 @@ form i
 {
     display: flex;
     justify-content: start;
+    padding: 30px 0 0 0;
 }
 
 .info i
@@ -210,35 +218,75 @@ form i
 }
 
 /* Article Hébergements */
-article
+.logement
 {
     display: flex;
-    width: 1340px;
+}
+
+.logement .populaire
+{
+    width: 880px;
     margin: 0 auto;
     padding-top: 45px;
 }
 
-.liste_hebergement
+/* .logement */
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+/* .liste_hebergement */
+.titre_hebergement
+{
+    display: flex;
+    flex-direction: column;
     font-size: 1em;
     font-weight: bold;
     color: black;
     background-color: #f2f2f2;
     border: 1px solid transparent;
     border-radius: 20px;
-    padding: 90px 40px;
+    padding: 0px 25px 0px 25px;
     box-sizing: border-box;
     margin-right: 20px;
     width: 880px;
 }
 
+.one h3 
+{
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 50px 0 12px 15px;
+}
+
+.two h3
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 30px 0 50px 15px;
+}
+
+.two a
+{
+    text-decoration: none;
+    color: black;
+}
 .titre_hebergement
 {
-    /* font-size: 1em; */
-    /* padding: 20px 0px 20px 20px; */
+    /* display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: bold;
+    width: auto;
+    position: absolute;
+    padding: 45px 0 25px 40px; */
+}
+.item 
+{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box_hebergement
@@ -247,8 +295,28 @@ article
     border: 0.1px solid white;
     border-radius: 20px;
     box-shadow: 3px 2px 2px #e9e9e9;
+    margin: 15px;
     width: 243px;
     height: 200px;
+}
+
+.box_hebergement h5 
+{
+    font-size: 1em;
+    padding: 10px 0px 0px 12px;
+}
+
+.box_hebergement p
+{
+    font-size: 1em;
+    padding: 5px 0px 0px 12px;
+}
+
+.stars_hebergement
+{
+    color: #0065FC;
+    font-size: 0.7em;
+    padding: 6px 54px 0px 12px;
 }
 
 .cannebiere img h5 p
@@ -266,11 +334,16 @@ article
     height: 115px;
 }
 
+h5
+{
+    font-size: 1em;
+    padding: 15px 50px 0px 12px;
+}
 p
 {
     font-size: 1em;
     font-weight: normal;
-    padding: 6px 54px 0px 12px;
+    padding: 10px 0px 0px 12px;
 }
 
 span
@@ -282,16 +355,51 @@ span
 {
     color: #0065FC;
     font-size: 0.7em;
-    padding: 5px 54px 0px 12px;
+    padding: 40px 54px 0px 12px;
 }
 
 /* Article Populaires */
 
-.liste_populaire
+aside
 {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 0px 25px 0px 25px;
+    box-sizing: border-box;
+    /* margin-right: 20px; */
+    width: 420px;
+}
+
+.three
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 15px 15px 15px;
+}
+
+.three h3
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.three i
+{
+    font-size: 1.2em;
+}
+
+/* .liste_populaire
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
     font-size: 1em;
     font-weight: bold;
     color: black;
@@ -302,12 +410,13 @@ span
     box-sizing: border-box;
     margin-left: 20px;
     width: 420px;
-}
+} */
 
 .box_populaire
 {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between;
+    flex-direction: column; */
     background-color: #ffffff;
     border: 0.1px solid white;
     border-radius: 20px;
@@ -317,16 +426,16 @@ span
     height: 145px;
 }
 
-.sun
+/* .sun
 {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .image_populaire
 {
     border-radius: 20px 0px 0px 20px;
-    margin: 4px 4px 0px 4px;
+    margin: 4px 8px 0px 4px;
     width: 125px;
     height: 135px;
 }
@@ -345,19 +454,71 @@ span
 }
 
 /* article activité */
+.activite
+{
+    display: flex;
+    flex-direction: column;
+    /* font-size: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 0px 25px 0px 25px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    width: 1340px; */
+}
+
+.four
+{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+    padding: 70px 0 28px 0;
+}
 .liste_activite
 {
     display: flex;
-    box-sizing: border-box;
-    height: 1340px;
+    flex-wrap: wrap;
 }
 
 h6
 {
     font-size: 1em;
     padding: 20px;
+    color: black;
 }
 
+.jane
+{
+    padding: 0 19px 0 0;
+}
+
+.alpha
+{
+    padding: 0 19px 21px 19px;
+}
+
+.echo   
+{
+    padding: 20px 19px 0 19px;
+}
+
+.tango
+{
+    padding: 0 19px 0 19px;
+}
+
+.fox
+{
+    padding: 0 0 20px 19px;
+}
+
+.papa 
+{
+    padding: 20px 0 0 19px;
+}
 .vieux_port img
 {
     border-radius: 20px 20px 0px 0px;
@@ -369,7 +530,7 @@ h6
     border: 1px solid #e9e9e9;
     border-radius: 20px; 20px; 20px; 20px;
     box-shadow: 3px 2px 2px #e9e9e9;
-    height: 450px;
+    height: 448px;
 }
 
 .fort img
@@ -397,9 +558,9 @@ h6
 .frioul
 {
     border: 1px solid #e9e9e9;
-    border-radius: 20px; 20px; 20px; 20px;
+    border-radius: 20px 20px 20px 20px;
     box-shadow: 3px 2px 2px #e9e9e9;
-    height: 170px; 
+    height: 165px; 
 }
 
 .calanque img
@@ -412,9 +573,9 @@ h6
 .calanque
 {
     border: 1px solid #e9e9e9;
-    border-radius: 20px; 20px; 20px; 20px;
+    border-radius: 20px 20px 20px 20px;
     box-shadow: 3px 2px 2px #e9e9e9;
-    height: 450px; 
+    height: 448px; 
 }
 
 .notre_dame img
@@ -429,7 +590,7 @@ h6
     border: 1px solid #e9e9e9;
     border-radius: 20px; 20px; 20px; 20px;
     box-shadow: 3px 2px 2px #e9e9e9;
-    height: 200px; 
+    height: 195px; 
 }
 
 .longchamp img
@@ -444,5 +605,28 @@ h6
     border: 1px solid #e9e9e9;
     border-radius: 20px; 20px; 20px; 20px;
     box-shadow: 3px 2px 2px #e9e9e9;
-    height: 215px; 
+    height: 210px; 
+}
+
+/* Footer  */
+footer
+{
+    display: flex;
+    background-color: #f2f2f2;
+    margin-top: 60px;
+}
+
+.mike
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 55px 0;
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.mike p
+{
+    padding-left: 0;
 }
