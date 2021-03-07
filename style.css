@@ -14,7 +14,33 @@ header{
     margin: 0 auto;
 }
 
+@media all and (max-width: 375px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 375px){
+    .hebergement{
+        order: 2;
+    }
+}
+
+@media all and (max-width: 375px){
+    .activite{
+        order: 3;
+    }
+}
+
+@media all and (max-width: 375px){
+    .inscription{
+        order: 1;
+    }
+}
+
 .logo {
+    object-fit: cover;
     width: 100px;
     height: 35px;
 }
@@ -28,14 +54,9 @@ nav li{
     margin-right: 67px
 }
 
-.hebergement{
-    text-decoration: none;
+a:hover{
     color: #0065FC;
-}
-
-.activite{
-    text-decoration: none;
-    color: #9f9f9f;
+    border-top: 2px solid #0065FC;
 }
 
 .inscription{
@@ -51,7 +72,12 @@ section{
     max-width: 1340px;
     margin: 0 auto;
 }
-
+@media all and (max-width: 375px){
+    section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 .filtre{
     display: flex;
     align-items: flex-start;
@@ -123,7 +149,13 @@ form i{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 30px 0 0 0;
+    padding: 30px 0 0 5px;
+}
+
+@media all and (max-width: 375px){
+    .box{
+        flex-direction: column;
+    }
 }
 
 .box_filtre{
@@ -132,15 +164,17 @@ form i{
 
 .box i{
     display: flex;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
     color: #0065FC;
     background-color: #deebff;
-    padding: 1px 18px 1px 18px;
     border: 2px solid transparent;
-    border-radius: 30px;
-    margin-right: -50px;
+    border-radius: 100%;
+    margin-right: -48px;
     position: relative;
+    width: 45px;
+    height: 45px;
 }
 
 .box p{
@@ -148,11 +182,11 @@ form i{
     align-items: center;
     text-decoration: none;
     color: black;
-    padding: 18px 20px 18px 62px;
+    padding: 0 15px 0 60px;
     border: 2px solid #d9d9d9;
     border-radius: 30px;
     margin-right: 25px;  
-    
+    height: 45px;   
 }
 
 .box_filtre:hover i{
@@ -171,10 +205,16 @@ form i{
     margin-right: 30px;
 }
 
+@media all and (max-width: 375px){
+    .filtre h3{
+        padding-bottom: 10px;
+    }
+}
+
 .info{
     display: flex;
     justify-content: start;
-    padding: 30px 0 0 0;
+    padding: 30px 0 0 5px;
 }
 
 .info i{
@@ -186,7 +226,7 @@ form i{
     font-size: 0.8em;
     padding: 3px 3px;
     border: 1px solid #d9d9d9;
-    border-radius: 30px;
+    border-radius: 100%;
     width: 25px;
     height: 25px;
 }
@@ -205,6 +245,12 @@ form i{
     flex-wrap: wrap;
 }
 
+@media all and (max-width: 375px){
+    .logement{
+        justify-content: space-around;
+    }
+}
+
 .titre_hebergement{
     display: flex;
     flex-direction: column;
@@ -216,8 +262,14 @@ form i{
     border-radius: 20px;
     padding: 0px 25px 0px 25px;
     box-sizing: border-box;
-    margin-right: 20px;
+    margin-right: 40px;
     max-width: 880px;
+}
+
+@media all and (max-width: 375px){
+    .titre_hebergement{
+        margin: 0 auto;
+    }
 }
 
 .one h3 {
@@ -228,6 +280,7 @@ form i{
 
 .item {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -298,20 +351,27 @@ aside{
     max-width: 420px;
 }
 
+@media all and (max-width: 768px){
+    aside{
+        margin-top: 20px;
+    }
+}
+
 .three{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 15px 15px 15px;
 }
 
 .three h3{
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: bold;
+    padding: 50px 0 12px 15px;
 }
 
 .three i{
-    font-size: 1.2em;
+    font-size: 1.6em;
+    padding: 50px 0 12px 15px;
 }
 
 .box_populaire{
@@ -356,6 +416,14 @@ p{
 .activite{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 768px){
+    .liste_activite{
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .four{
@@ -373,13 +441,8 @@ h4{
 
 .liste_activite{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 5px;
-}
-
-.jane{
-    /* padding: 0 19px 0 0; */
-    padding: 20px 40px 20px 0;
 }
 
 .jane a{
@@ -404,10 +467,6 @@ h4{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
 }
 
-.alpha{
-    /* padding: 0 19px 21px 19px; */
-    padding: 20px 40px 20px 0;
-}
 
 .alpha a{
     text-decoration: none;
@@ -429,11 +488,6 @@ h4{
 
 .fort:hover{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
-}
-
-.echo   {
-    /* padding: 20px 19px 0 19px; */
-    padding: 20px 40px 20px 0;
 }
 
 .echo a{
@@ -458,11 +512,6 @@ h4{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
 }
 
-.tango{
-    /* padding: 0 19px 0 19px; */
-    padding: 20px 40px 20px 0;
-}
-
 .tango a{
     text-decoration: none;
 }
@@ -485,9 +534,10 @@ h4{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
 }
 
-.fox{
-    /* padding: 0 0 20px 19px; */
-    padding: 20px 0 20px 0;
+.one_fox, .one_alpha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .fox a{
@@ -510,11 +560,6 @@ h4{
 
 .notre_dame:hover{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
-}
-
-.papa{
-    /* padding: 20px 0 0 19px; */
-    padding: 20px 0 20px 0;
 }
 
 .papa a{
@@ -546,14 +591,25 @@ footer{
     margin-top: 60px;
 }
 
+@media all and (max-width: 768px){
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .mike{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     padding: 60px 0 55px 0;
     width: 1340px;
     margin: 0 auto;
+}
+
+.mike div{
+    padding: 0 300px 0 0;
 }
 
 .mike p{
