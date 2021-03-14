@@ -13,13 +13,17 @@
 <!-- header  -->
     <header>  
         <img src="images/logo/Reservia@3x.png" alt="Logo" class="logo">
+        <div>
             <nav>
                 <ul>
                     <li><a class="hebergement" href="#hebergement">Hébergements</a></li>
                     <li><a class="activite" href="#activite_marseille">Activités</a></li>
-                    <li><a class="inscription" href="#">S'inscrire</a></li> 
                 </ul>
-            </nav>   
+            </nav> 
+            <div class="box_inscrit"> 
+                <li><a class="inscription" href="#">S'inscrire</a></li>
+            </div>
+        </div>
     </header>
 <!-- Section filtre et recherche -->
     <main>
@@ -36,22 +40,24 @@
                 </div>
                 <div class="box">
                     <h3>Filtres</h3>
-                   <div class="box_filtre">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <p>Economique</p>
-                   </div>
-                   <div class="box_filtre">
-                        <i class="fas fa-child"></i>
-                        <p>familiale</p>
-                   </div>
-                   <div class="box_filtre">
-                        <i class="fas fa-heart"></i>
-                        <p>Romantique</p>
-                   </div>
-                   <div class="box_filtre">
-                        <i class="fas fa-dog"></i>
-                        <p>Animaux autorisés</p>
-                   </div>
+                    <div class="boite_filtre">
+                        <div class="box_filtre">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <p>Economique</p>
+                        </div>
+                        <div class="box_filtre">
+                                <i class="fas fa-child"></i>
+                                <p>familiale</p>
+                        </div>
+                        <div class="box_filtre">
+                                <i class="fas fa-heart"></i>
+                                <p>Romantique</p>
+                        </div>
+                        <div class="box_filtre">
+                                <i class="fas fa-dog"></i>
+                                <p>Animaux autorisés</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="info">
                     <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -204,7 +210,7 @@
                 </aside>
             </div>
         </section>
-        <section class="activite">
+        <section class="activites">
                 <div class="four">
                     <h3 id="activite_marseille">Activités à Marseille</h3>
                 </div>

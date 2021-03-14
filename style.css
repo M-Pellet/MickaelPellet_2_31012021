@@ -16,14 +16,21 @@ header{
 
 @media all and (max-width: 375px){
     header{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 30px 0;
+        padding: 0;
     }
 }
 
+@media all and (max-width: 375px){
+    header div{
+        display: flex;
+        width: 100%;
+    }
+}
 .logo {
     object-fit: cover;
     width: 100px;
@@ -32,39 +39,121 @@ header{
 
 @media all and (max-width: 375px){
     .logo{
-        padding-left: 20px;
+        padding: 40px 0 0 20px;
+    }
+}
+
+@media all and (max-width: 375px){
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 375px){
+    div nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 40px 0 0 0;
     }
 }
 
 @media all and (max-width: 375px){
     nav{
-        padding-left: 20px;
-        width: 375px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0px;
     }
 }
+
 nav ul{
     display: flex;
     list-style-type: none;
+    width: 100%;
 }
 
 nav li{
-    margin-right: 67px
+    /* margin-right: 67px */
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_inscrit{
+    display: flex;
+    list-style-type: none;
+    width: auto;
 }
 
 li:hover a{
     color: #0065FC;
 }
 
+@media all and (max-width: 375px){
+    .box_inscrit{
+        position: absolute;
+        top: 55px;
+        Left: 295px;
+        margin: 0;
+    }
+}
+
+.hebergement, .activite, .inscription{
+    /* margin-right: 67px; */
+    padding: 0 35px;
+}
+
+@media all and (max-width: 375px){
+    .hebergement{
+        padding: 0 0;
+        /* margin: 0; */
+    }
+}
+
+@media all and (max-width: 375px){
+    .activite{
+        padding: 0 0;
+        /* margin: 0; */
+    }
+}
+
+@media all and (max-width: 375px){
+    .inscription{
+        padding: 0 0;
+        /* margin: 0; */
+    }
+}
+
 .hebergement:hover{
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 55px;
+} 
+
+@media all and (max-width: 375px){
+    li:nth-child(1){
+        order: 2;
+    }
 }
 
 .activite:hover{
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 55px;
+}
+
+@media all and (max-width: 375px){
+     li:nth-child(2){
+        order: 3;
+    }
 }
 
 .inscription:hover{
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 55px;
 }
 
 .inscription{
@@ -134,6 +223,12 @@ form i{
     height: 46px;
 }
 
+@media all and (max-width: 375px){
+    form i{
+        border-radius: 18px 0 0 18px;
+    }
+}
+
 .search{
     display: flex;
     align-items: center;
@@ -158,15 +253,20 @@ form .fa-search{
 
 @media all and (max-width: 375px){
     form .fa-search{
-        display: contents;
-    }
-}
-
-@media all and (max-width:375px){
-    .fa-search{
+        position: relative;
+        display: initial;
         color: white;
         background-color: #0065fc;
         border-radius: 18px 18px;
+        right: 20px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .barre_recherche .fa-search{
+        display: flex;
+        justify-content: center;
+        font-size: 1.3em;
     }
 }
 
@@ -187,29 +287,34 @@ form .fa-search{
 @media all and (max-width: 375px){
     .bouton{
         display: none;
-        /* position: relative;
+        position: relative;
         right: 30px;
         width: 50px;
         height: 50px;
-        border-radius: 15px 15px; */
+        border-radius: 15px 15px;
     }
 }
 
 .box{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 30px 0 0 5px;
+}
+
+.boite_filtre{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 @media all and (max-width: 375px){
     .box{
         display: flex;
-        flex-direction: column;
         justify-content: start;
         padding: 35px 0 0 0;
         width: 325px;
-        height: 310px;
+        height: 200px;
     }
 }
 
@@ -218,8 +323,44 @@ form .fa-search{
 }
 
 @media all and (max-width: 375px){
+    .box_filtre:nth-child(1){
+        order: 1;
+    }
+}
+
+@media all and (max-width: 375px){
+    .box_filtre:nth-child(2){
+        order: 4;
+        /* box-sizing: border-box; */
+    }
+}
+
+@media all and (max-width: 375px){
+    .box_filtre:nth-child(3){
+        order: 2;
+    }
+}
+
+@media all and (max-width: 375px){
+    .box_filtre:nth-child(4){
+        order: 3;
+    }
+}
+
+@media all and (max-width: 375px){
     .box h3{
         padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .boite_filtre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 375px;
+        height: 165px;
     }
 }
 
@@ -250,6 +391,12 @@ form .fa-search{
     margin-right: 40px;
 }
 
+@media all and (max-width: 375px){
+    .box p{
+        margin: 0;
+    }
+}
+
 .box_filtre:hover i{
     background-color: #0065FC;    
     border: 2px solid #0065fc;
@@ -263,12 +410,13 @@ form .fa-search{
 .filtre h3{
     display: flex;
     align-items: center;
+    padding-right: 30px;
 }
 
 .info{
     display: flex;
     justify-content: start;
-    padding: 30px 0 0 5px;
+    padding: 30px 0 0 0;
 }
 
 .info i{
@@ -503,7 +651,7 @@ p{
     padding: 10px 0px 0px 12px;
 }
 
-.activite{
+.activites{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -815,7 +963,6 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     padding: 60px 0 55px 0;
-    width: 1340px;
     margin: 0 auto;
 }
 
@@ -825,6 +972,7 @@ footer{
         flex-direction: column;
         align-items: flex-start;
         padding: 5px 0 50px 0;
+        margin: 0;
     }
 }
 
