@@ -45,12 +45,6 @@ header{
     }
 }
 
-@media all and (max-width: 768px){
-    .logo{
-        padding: 0 0 0 20px;
-    }
-}
-
 @media all and (max-width: 375px){
     nav ul{
         display: flex;
@@ -145,7 +139,6 @@ li:hover a{
         border-top: none;
         border-bottom: 3px solid #0065FC;
         padding-top: 0;
-        /* padding-bottom: 15px;     */
     }
 }
 
@@ -170,7 +163,6 @@ li:hover a{
         border-top: none;
         border-bottom: 3px solid #0065FC;
         padding-top: 0;
-        /* padding-bottom: 15px;    */
     }
 }
 
@@ -212,12 +204,6 @@ section{
 }
 
 @media all and (max-width: 375px){
-    .filtre{
-        padding: 35px 0 35px 20px;
-    }
-}
-
-@media all and (max-width: 768px){
     .filtre{
         padding: 35px 0 35px 20px;
     }
@@ -358,16 +344,6 @@ form .fa-search{
     }
 }
 
-@media all and (max-width: 768px){
-    .box{
-        display: flex;
-        justify-content: start;
-        padding: 35px 0 0 0;
-        width: 325px;
-        height: 160px;
-    }
-}
-
 .box_filtre{
     display: flex;
 }
@@ -410,17 +386,6 @@ form .fa-search{
         flex-wrap: wrap;
         width: 375px;
         height: 165px;
-    }
-}
-
-@media all and (max-width: 768px){
-    .boite_filtre{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 375px;
-        height: 110px;
     }
 }
 
@@ -749,12 +714,6 @@ p{
     padding: 70px 0 28px 20px;
 }
 
-@media all and (max-width: 375px){
-    .four{
-        padding: 10px 0 25px 20px;
-    }
-}
-
 h4{
     font-size: 1em;
     padding: 20px;
@@ -1051,17 +1010,6 @@ footer{
     }
 }
 
-@media all and (max-width: 768px){
-    footer{
-        flex-direction: column;
-        justify-content: left;
-        margin-top: 40px;
-        width: 768px;
-        height: 210px;
-    }
-}
-
-
 .box_infolien{
     display: flex;
     justify-content: flex-start;
@@ -1078,17 +1026,6 @@ footer{
         align-items: flex-start;
         padding: 5px 0 50px 0;
         margin: 0;
-    }
-}
-
-@media all and (max-width: 768px){
-    .box_infolien{
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 5px 0 50px 0;
-        margin: 0;
-        width: 768px;
     }
 }
 
