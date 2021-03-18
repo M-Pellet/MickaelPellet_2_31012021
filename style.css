@@ -29,8 +29,10 @@ header{
     header div{
         display: flex;
         width: 100%;
+        padding-top: 20px;
     }
 }
+
 .logo {
     object-fit: cover;
     width: 100px;
@@ -40,6 +42,12 @@ header{
 @media all and (max-width: 375px){
     .logo{
         padding: 40px 0 0 20px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .logo{
+        padding: 0 0 0 20px;
     }
 }
 
@@ -56,7 +64,8 @@ header{
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 40px 0 0 0;
+        padding: 0;
+       
     }
 }
 
@@ -72,10 +81,6 @@ nav ul{
     display: flex;
     list-style-type: none;
     width: 100%;
-}
-
-nav li{
-    /* margin-right: 67px */
 }
 
 header div{
@@ -97,35 +102,25 @@ li:hover a{
 @media all and (max-width: 375px){
     .box_inscrit{
         position: absolute;
-        top: 55px;
+        top: 35px;
         Left: 295px;
         margin: 0;
     }
 }
 
 .hebergement, .activite, .inscription{
-    /* margin-right: 67px; */
     padding: 0 35px;
 }
 
 @media all and (max-width: 375px){
-    .hebergement{
-        padding: 0 0;
-        /* margin: 0; */
-    }
-}
-
-@media all and (max-width: 375px){
-    .activite{
-        padding: 0 0;
-        /* margin: 0; */
+    ul{
+        border-bottom: 2px solid #f2f2f2;
     }
 }
 
 @media all and (max-width: 375px){
     .inscription{
         padding: 0 0;
-        /* margin: 0; */
     }
 }
 
@@ -135,8 +130,33 @@ li:hover a{
 } 
 
 @media all and (max-width: 375px){
+    .hebergement, .activite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0;
+        width: 100%;
+        height: 50px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .hebergement:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-top: 0;
+        /* padding-bottom: 15px;     */
+    }
+}
+
+@media all and (max-width: 375px){
     li:nth-child(1){
         order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
     }
 }
 
@@ -146,8 +166,22 @@ li:hover a{
 }
 
 @media all and (max-width: 375px){
+    .activite:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-top: 0;
+        /* padding-bottom: 15px;    */
+    }
+}
+
+@media all and (max-width: 375px){
      li:nth-child(2){
         order: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
     }
 }
 
@@ -179,7 +213,13 @@ section{
 
 @media all and (max-width: 375px){
     .filtre{
-        padding: 35px 0 0 20px;
+        padding: 35px 0 35px 20px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .filtre{
+        padding: 35px 0 35px 20px;
     }
 }
 
@@ -208,7 +248,7 @@ form{
 
 @media all and (max-width: 375px){
     form{
-        padding: 30px 0 0 0;
+        padding: 40px 0 0 0;
     }
 }
 
@@ -318,6 +358,16 @@ form .fa-search{
     }
 }
 
+@media all and (max-width: 768px){
+    .box{
+        display: flex;
+        justify-content: start;
+        padding: 35px 0 0 0;
+        width: 325px;
+        height: 160px;
+    }
+}
+
 .box_filtre{
     display: flex;
 }
@@ -331,7 +381,6 @@ form .fa-search{
 @media all and (max-width: 375px){
     .box_filtre:nth-child(2){
         order: 4;
-        /* box-sizing: border-box; */
     }
 }
 
@@ -361,6 +410,17 @@ form .fa-search{
         flex-wrap: wrap;
         width: 375px;
         height: 165px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .boite_filtre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 375px;
+        height: 110px;
     }
 }
 
@@ -447,7 +507,7 @@ form .fa-search{
     flex-wrap: wrap;
 }
 
-.titre_hebergement{
+.conteneur_hebergement{
     display: flex;
     flex-direction: column;
     font-size: 1em;
@@ -463,7 +523,16 @@ form .fa-search{
 }
 
 @media all and (max-width: 375px){
-    .titre_hebergement{
+    .conteneur_hebergement{
+        background-color: transparent;
+        margin-right: 0;
+        padding: 0 0;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 768px){
+    .conteneur_hebergement{
         background-color: transparent;
         margin-right: 0;
         padding: 0 0;
@@ -472,12 +541,12 @@ form .fa-search{
 }
 
 @media all and (max-width: 375px){
-    .titre_hebergement:nth-child(1){
+    .conteneur_hebergement:nth-child(1){
         order: 2;
     }
 }
 
-.one h3 {
+.titre_hebergement h3 {
     font-size: 1.6em;
     font-weight: bold;
     padding: 50px 0 12px 15px;
@@ -501,6 +570,7 @@ form .fa-search{
 
 @media all and (max-width: 375px){
     .box_hebergement{
+        margin: 5px 15px;
         width: 335px;
     }
 }
@@ -543,13 +613,13 @@ form .fa-search{
     padding: 6px 54px 0px 12px;
 }
 
-.two h3{
+.afficher_plus h3{
     font-size: 1.2em;
     font-weight: bold;
     padding: 30px 0 50px 15px;
 }
 
-.two a{
+.afficher_plus a{
     text-decoration: none;
     color: black;
 }
@@ -571,7 +641,16 @@ aside{
 @media all and (max-width: 375px){
     aside{
         width: 100%;
-        padding: 0 0;
+        padding: 0 0 35px 0;
+        border-radius: 0;
+    }
+}
+
+@media all and (max-width: 768px){
+    aside{
+        width: 100%;
+        padding: 0 0 35px 0;
+        margin: auto;
         border-radius: 0;
     }
 }
@@ -582,25 +661,31 @@ aside{
     }
 }
 
-.three{
+.titre_populaire{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.three h3{
+.titre_populaire h3{
     font-size: 1.6em;
     font-weight: bold;
     padding: 50px 0 12px 15px;
 }
 
-.three i{
+.titre_populaire i{
     font-size: 1.6em;
     padding: 50px 0 12px 15px;
 }
 
 @media all and (max-width: 375px){
-    .three i{
+    .titre_populaire i{
+        padding: 50px 20px 12px 15px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .titre_populaire i{
         padding: 50px 20px 12px 15px;
     }
 }
@@ -619,7 +704,7 @@ aside{
 @media all and (max-width: 375px){
     .box_populaire{
         width: 335px;
-        margin: 20px;
+        margin: 5px 20px;
     }
 }
 
@@ -651,22 +736,22 @@ p{
     padding: 10px 0px 0px 12px;
 }
 
-.activites{
+.box_activite{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.four{
+.titre_activite{
     font-size: 1.6em;
     font-weight: bold;
     color: black;
-    padding: 70px 0 28px 0;
+    padding: 70px 0 28px 20px;
 }
 
 @media all and (max-width: 375px){
     .four{
-        padding-left: 20px;
+        padding: 10px 0 25px 20px;
     }
 }
 
@@ -682,13 +767,21 @@ h4{
     flex-wrap: wrap;
 }
 
-.jane a{
+@media all and (max-width: 768px){
+    .liste_activite{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.activite_vieuxport a{
     text-decoration: none;
 }
 
 @media all and (max-width: 375px){
-    .jane{
-        padding: 10px 20px;
+    .activite_vieuxport{
+        padding: 10px 20px 10px 20px;
     }
 }
 
@@ -725,13 +818,13 @@ h4{
 }
 
 
-.alpha a{
+.fort_pomegue a{
     text-decoration: none;
 }
 
 @media all and (max-width: 375px){
-    .alpha{
-        padding: 10px 20px;
+    .fort_pomegue{
+        padding: 10px 20px 10px 20px;
     }
 }
 
@@ -767,13 +860,13 @@ h4{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
 }
 
-.echo a{
+.ile_frioul a{
     text-decoration: none;
 }
 
 @media all and (max-width: 375px){
-    .echo{
-        padding: 10px 20px;
+    .ile_frioul{
+        padding: 10px 20px 10px 20px;
     }
 }
 
@@ -809,13 +902,13 @@ h4{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
 }
 
-.tango a{
+.parc_calanque a{
     text-decoration: none;
 }
 
 @media all and (max-width: 375px){
-    .tango{
-        padding: 10px 20px;
+    .parc_calanque{
+        padding: 10px 20px 10px 20px;
     }
 }
 
@@ -851,18 +944,18 @@ h4{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
 }
 
-.one_fox, .one_alpha{
+.conteneur_notredame, .conteneur_activite{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.fox a{
+.notredame_garde a{
     text-decoration: none;
 }
 
 @media all and (max-width: 375px){
-    .fox{
+    .notredame_garde{
         padding: 10px 20px;
     }
 }
@@ -899,12 +992,12 @@ h4{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
 }
 
-.papa a{
+.parc_longchamp a{
     text-decoration: none;
 }
 
 @media all and (max-width: 375px){
-    .papa{
+    .parc_longchamp{
         padding: 10px 20px;
     }
 }
@@ -952,12 +1045,24 @@ footer{
     footer{
         flex-direction: column;
         justify-content: left;
+        margin-top: 40px;
         width: 375px;
         height: 455px;
     }
 }
 
-.mike{
+@media all and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 40px;
+        width: 768px;
+        height: 210px;
+    }
+}
+
+
+.box_infolien{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -967,7 +1072,7 @@ footer{
 }
 
 @media all and (max-width: 375px){
-    .mike{
+    .box_infolien{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -976,17 +1081,34 @@ footer{
     }
 }
 
-.mike div{
+@media all and (max-width: 768px){
+    .box_infolien{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 5px 0 50px 0;
+        margin: 0;
+        width: 768px;
+    }
+}
+
+.box_infolien div{
     padding: 0 300px 0 0;
 }
 
 @media all and (max-width: 375px){
-    .mike div{
+    .box_infolien div{
         padding: 45px 0 0 20px;
     }
 }
 
-.mike p{
+@media all and (max-width: 768px){
+    .box_infolien div{
+        padding: 45px 0 0 20px;
+    }
+}
+
+.box_infolien p{
     padding-left: 0;
 }
 
