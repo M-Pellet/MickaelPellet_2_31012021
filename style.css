@@ -102,6 +102,15 @@ li:hover a{
     }
 }
 
+@media all and (max-width: 320px){
+    .box_inscrit{
+        position: absolute;
+        top: 35px;
+        Left: 230px;
+        margin: 0;
+    }
+}
+
 .hebergement, .activite, .inscription{
     padding: 0 35px;
 }
@@ -196,6 +205,12 @@ section{
     margin: 0 auto;
 }
 
+@media all and (max-width: 375px){
+    section{
+        width: 100%;
+    }
+}
+
 .filtre{
     display: flex;
     align-items: flex-start;
@@ -205,7 +220,7 @@ section{
 
 @media all and (max-width: 375px){
     .filtre{
-        padding: 35px 0 35px 20px;
+        padding: 35px 0 35px 0;
     }
 }
 
@@ -219,10 +234,34 @@ h1{
     font-size: 24px;
 }
 
+@media all and (max-width: 320px){
+    h1{
+        padding: 0 0 0 20px;
+    }
+}
+
+@media all and (max-width: 375px){
+    h1{
+        padding: 0 0 0 20px;
+    }
+}
+
 h2{
     padding: 15px 0 0 0;
     font-size: 18px;
     font-weight: normal;
+}
+
+@media all and (max-width: 320px){
+    h2{
+        padding: 15px 0 0 20px;
+    }
+}
+
+@media all and (max-width: 375px){
+    h2{
+        padding: 0 0 0 20px;
+    }
 }
 
 form{
@@ -232,9 +271,15 @@ form{
     padding: 20px 0 0 0;
 }
 
+@media all and (max-width: 320px){
+    form{
+        padding: 40px 0 0 20px;
+    }
+}
+
 @media all and (max-width: 375px){
     form{
-        padding: 40px 0 0 0;
+        padding: 40px 0 0 20px;
     }
 }
 
@@ -270,6 +315,13 @@ form i{
 @media all and (max-width: 375px){
     .search{
         border: 0.3px solid #d9d9d9;
+    }
+}
+
+@media all and (max-width: 320px){
+    .search{
+        border: 0.3px solid #d9d9d9;
+        width: 175px;
     }
 }
 
@@ -340,7 +392,7 @@ form .fa-search{
         justify-content: start;
         padding: 35px 0 0 0;
         width: 325px;
-        height: 200px;
+        height: 270px;
     }
 }
 
@@ -386,6 +438,19 @@ form .fa-search{
         flex-wrap: wrap;
         width: 375px;
         height: 165px;
+        padding: 0 0 0 20px;
+    }
+}
+
+@media all and (max-width: 320px){
+    .boite_filtre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 375px;
+        height: 220px;
+        padding: 0 0 0 20px;
     }
 }
 
@@ -438,10 +503,34 @@ form .fa-search{
     padding-right: 30px;
 }
 
+@media all and (max-width: 320px){
+    .filtre h3{
+        padding: 0 20px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .filtre h3{
+        padding: 0 20px;
+    }
+}
+
 .info{
     display: flex;
     justify-content: start;
     padding: 30px 0 0 0;
+}
+
+@media all and (max-width: 320px){
+    .info{
+        padding: 30px 0 0 20px;
+    }
+}
+
+@media all and (max-width: 375px){
+    .info{
+        padding: 30px 0 0 20px;
+    }
 }
 
 .info i{
@@ -523,6 +612,12 @@ form .fa-search{
     flex-wrap: wrap;
 }
 
+@media all and (max-width: 320px){
+    .item{
+        width: 320px;
+    }
+}
+
 .box_hebergement{
     background-color: #ffffff;
     border: 0.1px solid white;
@@ -537,6 +632,13 @@ form .fa-search{
     .box_hebergement{
         margin: 5px 15px;
         width: 335px;
+    }
+}
+
+@media all and (max-width: 320px){
+    .box_hebergement{
+        margin: 5px 15px;
+        width: 305px;
     }
 }
 
@@ -568,7 +670,13 @@ form .fa-search{
 
 @media all and (max-width: 375px){
     .image_ebergement{
-        width: 335px;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 320px){
+    .image_ebergement{
+        margin: 4px 0px 0px 2px;
     }
 }
 
@@ -673,6 +781,13 @@ aside{
     }
 }
 
+@media all and (max-width: 320px){
+    .box_populaire{
+        width: 300px;
+        margin: 5px 5px;
+    }
+}
+
 .box_populaire:hover{
     box-shadow: 5px 4px 10px rgb(32, 32, 32);
 }
@@ -691,10 +806,23 @@ aside{
     padding: 40px 54px 0px 12px;
 }
 
+.star{
+    color: #0065FC;
+    font-size: 0.7em;
+    padding: 57px 54px 0px 12px;
+}
+
 .box_populaire h4{
     font-size: 1em;
-    padding: 15px 50px 0px 12px;
+    padding: 15px 15px 0px 12px;
 }
+
+@media all and (max-width: 320px){
+    .box_populaire h4{
+        padding: 15px 15px 0px 12px;
+    }
+}
+
 p{
     font-size: 1em;
     font-weight: normal;
@@ -744,6 +872,12 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .activite_vieuxport{
+        padding: 10px 0;
+    }
+}
+
 .vieux_port{
     border: 1px solid #e9e9e9;
     border-radius: 20px 20px 20px 20px;
@@ -758,6 +892,13 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .vieux_port{
+        width: 300px;
+        height: 190px;
+    }
+}
+
 .vieux_port img{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -767,7 +908,7 @@ h4{
 
 @media all and (max-width: 375px){
     .vieux_port img{
-        width: 335px;
+        width: 100%;
         height: 135px;
     }
 }
@@ -787,6 +928,12 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .fort_pomegue{
+        padding: 10px 0;
+    }
+}
+
 .fort{
     border: 1px solid #e9e9e9;
     border-radius: 20px 20px 20px 20px;
@@ -801,6 +948,13 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .fort{
+        width: 300px;
+        height: 190px;
+    }
+}
+
 .fort img{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -810,7 +964,7 @@ h4{
 
 @media all and (max-width: 375px){
     .fort img{
-        width: 335px;
+        width: 100%;
         height: 135px;
     }
 }
@@ -829,6 +983,12 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .ile_frioul{
+        padding: 10px 0;
+    }
+}
+
 .frioul{
     border: 1px solid #e9e9e9;
     border-radius: 20px 20px 20px 20px;
@@ -843,6 +1003,13 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .frioul{
+        width: 300px;
+        height: 190px;
+    }
+}
+
 .frioul img{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -852,7 +1019,7 @@ h4{
 
 @media all and (max-width: 375px){
     .frioul img{
-        width: 335px;
+        width: 100%;
         height: 135px;
     }
 }
@@ -871,6 +1038,12 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .parc_calanque{
+        padding: 10px 0;
+    }
+}
+
 .calanque{
     border: 1px solid #e9e9e9;
     border-radius: 20px 20px 20px 20px;
@@ -885,6 +1058,13 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .calanque{
+        width: 300px;
+        height: 190px;
+    }
+}
+
 .calanque img{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -894,7 +1074,7 @@ h4{
 
 @media all and (max-width: 375px){
     .calanque img{
-        width: 335px;
+        width: 100%;
         height: 135px;
     }
 }
@@ -919,6 +1099,12 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .notredame_garde{
+        padding: 10px 0;
+    }
+}
+
 .notre_dame{
     border: 1px solid #e9e9e9;
     border-radius: 20px 20px 20px 20px;
@@ -933,6 +1119,13 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .notre_dame{
+        width: 300px;
+        height: 190px;
+    }
+}
+
 .notre_dame img{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -942,7 +1135,7 @@ h4{
 
 @media all and (max-width: 375px){
     .notre_dame img{
-        width: 335px;
+        width: 100%;
         height: 135px;
     }
 }
@@ -961,6 +1154,12 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .parc_longchamp{
+        padding: 10px 0;
+    }
+}
+
 .longchamp{
     border: 1px solid #e9e9e9;
     border-radius: 20px 20px 20px 20px;
@@ -975,6 +1174,13 @@ h4{
     }
 }
 
+@media all and (max-width: 320px){
+    .longchamp{
+        width: 300px;
+        height: 190px;
+    }
+}
+
 .longchamp img{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -984,7 +1190,7 @@ h4{
 
 @media all and (max-width: 375px){
     .longchamp img{
-        width: 335px;
+        width: 100%;
         height: 135px;
     }
 }
@@ -1005,8 +1211,8 @@ footer{
         flex-direction: column;
         justify-content: left;
         margin-top: 40px;
-        width: 375px;
         height: 455px;
+        width: 100%;
     }
 }
 
