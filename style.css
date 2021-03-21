@@ -806,10 +806,22 @@ aside{
     padding: 40px 54px 0px 12px;
 }
 
+@media all and (max-width: 320px){
+    .stars{
+        padding: 40px 54px 0px 0px;
+    }
+}
+
 .star{
     color: #0065FC;
     font-size: 0.7em;
     padding: 57px 54px 0px 12px;
+}
+
+@media all and (max-width: 320px){
+    .star{
+        padding: 40px 54px 0px 0px;
+    }
 }
 
 .box_populaire h4{
@@ -819,7 +831,7 @@ aside{
 
 @media all and (max-width: 320px){
     .box_populaire h4{
-        padding: 15px 15px 0px 12px;
+        padding: 15px 0px 0px 0px;
     }
 }
 
@@ -827,6 +839,12 @@ p{
     font-size: 1em;
     font-weight: normal;
     padding: 10px 0px 0px 12px;
+}
+
+@media all and (max-width: 320px){
+    .box_populaire p{
+        padding: 12px 10px 0px 0px;
+    }
 }
 
 .box_activite{
