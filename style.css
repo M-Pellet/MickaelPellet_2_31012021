@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
 }
+/* body */
+
+body{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    
+}
 
 /* header */
 header{
@@ -14,6 +21,17 @@ header{
     margin: 0 auto;
 }
 
+@media all and (max-width: 425px){
+    header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+    }
+}
+
 @media all and (max-width: 375px){
     header{
         position: relative;
@@ -22,6 +40,14 @@ header{
         justify-content: space-between;
         align-items: flex-start;
         padding: 0;
+    }
+}
+
+@media all and (max-width: 425px){
+    header div{
+        display: flex;
+        width: 100%;
+        padding-top: 20px;
     }
 }
 
@@ -39,9 +65,22 @@ header{
     height: 35px;
 }
 
+@media all and (max-width: 425px){
+    .logo{
+        padding: 40px 0 0 20px;
+    }
+}
+
 @media all and (max-width: 375px){
     .logo{
         padding: 40px 0 0 20px;
+    }
+}
+
+@media all and (max-width: 425px){
+    nav ul{
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -49,6 +88,17 @@ header{
     nav ul{
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 425px){
+    div nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+       
     }
 }
 
@@ -93,6 +143,15 @@ li:hover a{
     color: #0065FC;
 }
 
+@media all and (max-width: 425px){
+    .box_inscrit{
+        position: absolute;
+        top: 35px;
+        Left: 290px;
+        margin: 0;
+    }
+}
+
 @media all and (max-width: 375px){
     .box_inscrit{
         position: absolute;
@@ -115,6 +174,12 @@ li:hover a{
     padding: 0 35px;
 }
 
+@media all and (max-width: 425px){
+    ul{
+        border-bottom: 2px solid #f2f2f2;
+    }
+}
+
 @media all and (max-width: 375px){
     ul{
         border-bottom: 2px solid #f2f2f2;
@@ -132,6 +197,17 @@ li:hover a{
     padding-top: 55px;
 } 
 
+@media all and (max-width: 425px){
+    .hebergement, .activite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0;
+        width: 100%;
+        height: 50px;
+    }
+}
+
 @media all and (max-width: 375px){
     .hebergement, .activite{
         display: flex;
@@ -140,6 +216,14 @@ li:hover a{
         padding: 0 0;
         width: 100%;
         height: 50px;
+    }
+}
+
+@media all and (max-width: 425px){
+    .hebergement:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-top: 0;
     }
 }
 
@@ -234,6 +318,12 @@ h1{
     font-size: 24px;
 }
 
+@media all and (max-width: 425px){
+    h1{
+        padding: 0 0 0 20px;
+    }
+}
+
 @media all and (max-width: 320px){
     h1{
         padding: 0 0 0 20px;
@@ -250,6 +340,12 @@ h2{
     padding: 15px 0 0 0;
     font-size: 18px;
     font-weight: normal;
+}
+
+@media all and (max-width: 425px){
+    h2{
+        padding: 15px 0 0 20px;
+    }
 }
 
 @media all and (max-width: 320px){
@@ -269,6 +365,12 @@ form{
     justify-content: flex-start;
     align-items: center;
     padding: 20px 0 0 0;
+}
+
+@media all and (max-width: 425px){
+    form{
+        padding: 40px 0 0 20px;
+    }
 }
 
 @media all and (max-width: 320px){
@@ -310,6 +412,13 @@ form i{
     font-weight: bold;
     width: 233px;
     height: 50px;
+}
+
+@media all and (max-width: 425px){
+    .search{
+        border: 0.3px solid #d9d9d9;
+        width: 175px;
+    }
 }
 
 @media all and (max-width: 375px){
@@ -386,6 +495,16 @@ form .fa-search{
     flex-wrap: wrap;
 }
 
+@media all and (max-width: 425px){
+    .box{
+        display: flex;
+        justify-content: start;
+        padding: 35px 0 0 0;
+        width: 325px;
+        height: 270px;
+    }
+}
+
 @media all and (max-width: 375px){
     .box{
         display: flex;
@@ -400,25 +519,25 @@ form .fa-search{
     display: flex;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .box_filtre:nth-child(1){
         order: 1;
     }
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .box_filtre:nth-child(2){
         order: 4;
     }
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .box_filtre:nth-child(3){
         order: 2;
     }
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .box_filtre:nth-child(4){
         order: 3;
     }
@@ -427,6 +546,18 @@ form .fa-search{
 @media all and (max-width: 375px){
     .box h3{
         padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 425px){
+    .boite_filtre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 375px;
+        height: 165px;
+        padding: 0 0 0 20px;
     }
 }
 
@@ -473,6 +604,7 @@ form .fa-search{
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-weight: bold;
     color: black;
     padding: 0 15px 0 60px;
     border: 2px solid #d9d9d9;
@@ -481,9 +613,10 @@ form .fa-search{
     margin-right: 40px;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .box p{
         margin: 0;
+        margin-right: 0;
     }
 }
 
@@ -503,6 +636,12 @@ form .fa-search{
     padding-right: 30px;
 }
 
+@media all and (max-width: 425px){
+    .filtre h3{
+        padding: 0 20px;
+    }
+}
+
 @media all and (max-width: 320px){
     .filtre h3{
         padding: 0 20px;
@@ -519,6 +658,12 @@ form .fa-search{
     display: flex;
     justify-content: start;
     padding: 30px 0 0 0;
+}
+
+@media all and (max-width: 425px){
+    .info{
+        padding: 30px 0 0 20px;
+    }
 }
 
 @media all and (max-width: 320px){
@@ -628,6 +773,13 @@ form .fa-search{
     height: 200px;
 }
 
+@media all and (max-width: 425px){
+    .box_hebergement{
+        margin: 5px 15px;
+        width: 305px;
+    }
+}
+
 @media all and (max-width: 375px){
     .box_hebergement{
         margin: 5px 15px;
@@ -666,6 +818,13 @@ form .fa-search{
     margin: 4px 4px 0px 4px;
     width: 235px;
     height: 115px;
+}
+
+@media all and (max-width: 425px){
+    .image_ebergement{
+        margin: 4px 0px 0px 2px;
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 375px){
@@ -711,8 +870,9 @@ aside{
     max-width: 420px;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     aside{
+        align-items: center;
         width: 100%;
         padding: 0 0 35px 0;
         border-radius: 0;
@@ -772,6 +932,13 @@ aside{
     margin: 15px;
     width: 343px;
     height: 145px;
+}
+
+@media all and (max-width: 425px){
+    .box_populaire{
+        width: 300px;
+        margin: 5px 5px;
+    }
 }
 
 @media all and (max-width: 375px){
@@ -880,11 +1047,25 @@ h4{
     }
 }
 
+@media all and (max-width: 425px){
+    .liste_activite{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
 .activite_vieuxport a{
     text-decoration: none;
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .activite_vieuxport{
+        padding: 10px 0;
+    }
+} */
+
+@media all and (max-width: 425px){
     .activite_vieuxport{
         padding: 10px 20px 10px 20px;
     }
@@ -903,7 +1084,14 @@ h4{
     height: 448px;
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .vieux_port{
+        width: 100%;
+        height: 190px;
+    }
+} */
+
+@media all and (max-width: 425px){
     .vieux_port{
         width: 335px;
         height: 190px;
@@ -924,7 +1112,7 @@ h4{
     height: 390px;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .vieux_port img{
         width: 100%;
         height: 135px;
@@ -940,7 +1128,13 @@ h4{
     text-decoration: none;
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .fort_pomegue{
+        padding: 10px 0;
+    }
+} */
+
+@media all and (max-width: 425px){
     .fort_pomegue{
         padding: 10px 20px 10px 20px;
     }
@@ -959,7 +1153,14 @@ h4{
     height: 240px; 
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .fort{
+        width: 300px;
+        height: 190px;
+    }
+} */
+
+@media all and (max-width: 425px){
     .fort{
         width: 335px;
         height: 190px;
@@ -980,7 +1181,7 @@ h4{
     height: 180px; 
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .fort img{
         width: 100%;
         height: 135px;
@@ -995,7 +1196,13 @@ h4{
     text-decoration: none;
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .ile_frioul{
+        padding: 10px 0;
+    }
+} */
+
+@media all and (max-width: 425px){
     .ile_frioul{
         padding: 10px 20px 10px 20px;
     }
@@ -1014,7 +1221,14 @@ h4{
     height: 165px; 
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .frioul{
+        width: 300px;
+        height: 190px;
+    }
+} */
+
+@media all and (max-width: 425px){
     .frioul{
         width: 335px;
         height: 190px;
@@ -1035,7 +1249,7 @@ h4{
     height: 110px; 
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .frioul img{
         width: 100%;
         height: 135px;
@@ -1050,7 +1264,13 @@ h4{
     text-decoration: none;
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .parc_calanque{
+        padding: 10px 0;
+    }
+} */
+
+@media all and (max-width: 425px){
     .parc_calanque{
         padding: 10px 20px 10px 20px;
     }
@@ -1069,7 +1289,14 @@ h4{
     height: 448px; 
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .calanque{
+        width: 300px;
+        height: 190px;
+    }
+} */
+
+@media all and (max-width: 425px){
     .calanque{
         width: 335px;
         height: 190px;
@@ -1090,7 +1317,7 @@ h4{
     height: 390px; 
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .calanque img{
         width: 100%;
         height: 135px;
@@ -1111,7 +1338,13 @@ h4{
     text-decoration: none;
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .notredame_garde{
+        padding: 10px 0;
+    }
+} */
+
+@media all and (max-width: 425px){
     .notredame_garde{
         padding: 10px 20px;
     }
@@ -1130,7 +1363,14 @@ h4{
     height: 195px; 
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .notre_dame{
+        width: 300px;
+        height: 190px;
+    }
+} */
+
+@media all and (max-width: 425px){
     .notre_dame{
         width: 335px;
         height: 190px;
@@ -1151,7 +1391,7 @@ h4{
     height: 140px; 
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .notre_dame img{
         width: 100%;
         height: 135px;
@@ -1166,7 +1406,13 @@ h4{
     text-decoration: none;
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .parc_longchamp{
+        padding: 10px 0;
+    }
+} */
+
+@media all and (max-width: 425px){
     .parc_longchamp{
         padding: 10px 20px;
     }
@@ -1185,7 +1431,14 @@ h4{
     height: 210px; 
 }
 
-@media all and (max-width: 375px){
+/* @media all and (max-width: 425px){
+    .longchamp{
+        width: 300px;
+        height: 190px;
+    }
+} */
+
+@media all and (max-width: 425px){
     .longchamp{
         width: 335px;
         height: 190px;
@@ -1206,7 +1459,7 @@ h4{
     height: 155px; 
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .longchamp img{
         width: 100%;
         height: 135px;
@@ -1224,7 +1477,7 @@ footer{
     margin-top: 60px;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     footer{
         flex-direction: column;
         justify-content: left;
@@ -1243,7 +1496,7 @@ footer{
     margin: 0 auto;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .box_infolien{
         display: flex;
         flex-direction: column;
@@ -1257,7 +1510,7 @@ footer{
     padding: 0 300px 0 0;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .box_infolien div{
         padding: 45px 0 0 20px;
     }
